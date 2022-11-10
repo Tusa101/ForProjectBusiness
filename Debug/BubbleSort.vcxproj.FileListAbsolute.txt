@@ -1,1 +1,2 @@
 D:\VS_Proj\BubbleSort\Debug\BubbleSort.exe
+C:\Users\User\Desktop\Лабы 5 сем\ProjectBusiness\GITLW\Debug\BubbleSort.exe
