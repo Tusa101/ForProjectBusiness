@@ -37,32 +37,6 @@ void ShellSort(int*& array, int& len)
 
 
 
-int& Partition(int*& arr, int& l, int& r)
-{
-    int pivot = arr[(l-r)/2];
-    int m = l;
-    for (int i = l; i < r - 1; i++)
-    { 
-        if (arr[i] < pivot)
-        {
-            int temp = arr[i];
-            arr[i] = arr[m];
-            arr[m] = temp;
-            m++;
-            return m;
-        }
-    }
-}
-void HoarSort(int*& arr, int& l, int& r)
-{
-    if (r - l == 1)
-    {
-        int m = Partition(arr, l, r);
-        HoarSort(arr, l, m);
-        HoarSort(arr, m, r);
-    }
-}
-
 void BubbleSort(int*& arr_for_sort, const int& len)
 {
     int temp;
