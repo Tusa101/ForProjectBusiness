@@ -5,6 +5,38 @@
 using namespace std;
 
 
+
+
+void ShellSort(int*& array, int& len) 
+{
+    int h = 1;
+
+    while (h <= len / 3) 
+    {
+        h = h * 3 + 1;
+    }
+
+    while (h > 0) {
+        for (int outer = h; outer < len; outer++) 
+        {
+            int tmp = array[outer];
+            int inner = outer;
+
+            while (inner > h - 1 && array[inner - h] > tmp) 
+            {
+                array[inner] = array[inner - h];
+                inner -= h;
+            }
+
+            array[inner] = tmp;
+        }
+
+        h = (h - 1) / 3;
+    }
+}
+
+
+
 int& Partition(int*& arr, int& l, int& r)
 {
     int pivot = arr[(l-r)/2];
@@ -74,6 +106,7 @@ int main()
     FillArr(arr_for_sort, len);
     HoarSort(arr_for_sort, l, len);
     //BubbleSort(arr_for_sort, len);
+    ShellSort(arr_for_sort, len);
     DisplayArr(arr_for_sort, len);
 }
 
