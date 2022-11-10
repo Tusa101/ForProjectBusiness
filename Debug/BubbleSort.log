@@ -1,2 +1,4 @@
 ﻿  BubbleSort.cpp
-  BubbleSort.vcxproj -> D:\VS_Proj\BubbleSort\Debug\BubbleSort.exe
+C:\Users\User\Desktop\Лабы 5 сем\ProjectBusiness\GITLW\BubbleSort.cpp(23): warning C4715: Partition: значение возвращается не при всех путях выполнения
+C:\Users\User\Desktop\Лабы 5 сем\ProjectBusiness\GITLW\BubbleSort.cpp(20): warning C4172: возвращение адреса локальной или временной переменной : m
+  BubbleSort.vcxproj -> C:\Users\User\Desktop\Лабы 5 сем\ProjectBusiness\GITLW\Debug\BubbleSort.exe
