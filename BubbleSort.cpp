@@ -24,9 +24,9 @@ void InsertSort(int*& arr_for_sort, const int& len)
 {
 	int cnt = 0;
 	for(int i = 1; i < len; i++)
-    {
+    	{
 		for(int j = i; j > 0 && arr_for_sort[j-1]>arr_for_sort[j];j--)
-        {
+        	{
 			cnt++;
 			int tmp=arr_for_sort[j-1];
 			arr_for_sort[j-1]=arr[j];
